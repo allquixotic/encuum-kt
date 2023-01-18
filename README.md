@@ -36,3 +36,21 @@ Now on Windows you would run `gradlew.bat run` to execute the tool.
 To watch what the tool is doing, add `headless=true` to the config file.
 
 The tool also works on MacOS and Linux, but there you'll run `./gradlew run` instead from a Terminal app.
+
+# Known Issues
+
+ - Java version 19 appears not to work right now. Issue #1
+ - The program keeps running even after it's done all its work. Issue #2
+
+# After It's Done
+
+Once the program completes, you have a [SQLite database](https://sqlite.org/index.html) with your forum export in it. Many different programs can parse SQLite databases, and transform the data into various formats. See: 
+
+ - https://github.com/planetopendata/awesome-sqlite for a list of useful SQLite tools
+ - https://www.dbvis.com for DBVisualizer (freeware with a paid version with extra features) 
+
+# Importing Into a New Site
+
+This is beyond the scope of what encuum can help you with, but you will need to use a program (or write a script/program) to transform the data format of encuum's sqlite database into a format that your new site can use, if you want the encuum-exported data to become forum posts on a new site.
+
+I can provide general tips if you give me specifics about where you're trying to import, but I probably won't have time to write code for you.

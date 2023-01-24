@@ -1,6 +1,12 @@
 # encuum-kt
 Encuum - Enjin forum scraper that saves to SQL
 
+#IMPORTANT - PLEASE READ
+
+This code is no longer maintained. The Enjin API includes all the needed functions to extract an Enjin website. I have rewritten Encuum in Rust targeting the Enjin JSON-RPC API. It is a lot faster. See: https://github.com/allquixotic/encuum
+
+--------
+
 Documentation and the code itself is a work in progress. I will probably be shifting my focus over to using the Enjin API (if I can get it to work), but I will make that a new GitHub repo, so that those who want to continue to use the screen scraper version can continue using it.
 
 This screen scraper only requires that you have a user account on Enjin with access to forums that you want to backup. That's all!
